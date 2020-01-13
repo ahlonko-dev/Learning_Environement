@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- METTA -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Help</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="w3-container w3-green">
+        <nav>
+          <div>
+            <ul>
+              <li class="active"><a href="#accueil">Accueil</a></li>
+              <li><a href="#budget">Budget</a></li>
+              <li><a href="#lieu">Lieu</a></li>
+              <li><a href="#inscription">Inscription</a></li>
+              <li><a href="#communication">Communication</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
+              <li><a href="#plan">Plan d'Action</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="w3-row-padding">
+        <h1 id="accueil">Accueil</h1>
+        <div class="w3-third">
+          <h2>Présentation de L'ONG</h2>
+          <p class="p1">
+            L'association "Help For us" a été fondée le 14 septembre 2015 par
+            des collaborateurs de Swiss Casinos Zurich AG. Elle a pour but de
+            promouvoir le développement de la région de Tomety-Kondji et de
+            soutenir le développement de l'exploitation.
+          </p>
+        </div>
+        <div class="w3-third">
+          <p>
+            Elle soutient en première ligne l'association Étoile Verte. Le
+            directeur de l'association, Lucas Baumann, coordonne le
+            développement du projet au nom de l'association et veille à ce que
+            les fonds soient utilisés conformément aux statuts.
+          </p>
+          <img src="img/hh.jpeg" style="width:100%;" />
+          <h2>Yes we Can!</h2>
+        </div>
+        <div class="w3-third">
+          <h2><a href="#">In code we trust!</a></h2>
+          <p class="p2">
+            "it always seems impossible until it is done!" <br>
+            <strong>Nelson Mandel</strong>
+          </p>
+
+          <p>
+            Les membres de l'association se rendent régulièrement au Togo pour
+            visiter la ferme et vérifier l'avancement du projet. Ils créent
+            également un lien personnel avec les membres de l'Etoile Verte.
+          </p>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="row">
+          <h1 id="budget">Budget</h1>
+          <h2 class="budget">Budget Prévisionnel</h2>
+          <div class="budget1">
+            <table>
+              <tr>
+                <th>Items</th>
+                <th>Quantité</th>
+                <th>P.Unité</th>
+                <th>Nombre de jours</th>
+                <th>P.Total</th>
+              </tr>
+              <tr>
+                <td>Location de voiture</td>
+                <td>2</td>
+                <td>50 euros</td>
+                <td>15</td>
+                <td>1500 euros</td>
+              </tr>
+              <tr>
+                <td>Personnes à charges</td>
+                <td>2</td>
+                <td>50 euros</td>
+                <td>15</td>
+                <td>1500 euros</td>
+              </tr>
+              <tr>
+                <td>Autres</td>
+                <td>3</td>
+                <td>50 euros</td>
+                <td>15</td>
+                <td>2250 euros</td>
+              </tr>
+            </table>
+          </div>
+          <h2>Divers</h2>
+          <p>
+            Il s'agit d'un tableau financier regroupant l'ensemble des dépenses
+            (ou « charges ») et des recettes (ou « produits ») liées à votre
+            projet pour l'année en cours ou à venir. L'année concernée est
+            appelée « exercice ». Elle correspond généralement à une année
+            civile et fiscale
+          </p>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="row">
+          <h1 id="lieu">Lieu</h1>
+          <h2><a href="#">Tout se passe ici!</a></h2>
+          <div class="geo">
+            <p>Rue Quétry 23 4000 Liège Belgique</p>
+            <p class="proverbe_a">
+              "Beaucoup de petites personnes, dans beaucoup de petits endroits,
+              qui font beaucoup de petites choses, peuvent changer le visage de
+              ce monde."
+              <a class="merci" href="https://www.etoileverte.org/merci"
+                >Proverbe africain</a
+              >.
+            </p>
+            <img src="img/maps.jpeg" alt="maps" style="width:100%;" />
+
+            <script>
+              var x = document.getElementById("demo");
+              function getLocation() {
+                if (navigator.geolocation) {
+                  navigator.geolocation.watchPosition(showPosition);
+                } else {
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+              }
+              function showPosition(position) {
+                x.innerHTML =
+                  "Latitude: " +
+                  position.coords.latitude +
+                  "<br>Longitude: " +
+                  position.coords.longitude;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="inscrpition">
+          <h1 id="inscription">Incription</h1>
+          <h2>Formulaire d'inscription</h2>
+          <form action="/action_page.php">
+            First name:<br />
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Your First name"
+            /><br/>
+            Last name:<br/>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Your Last name "
+            /><br />
+            Sexe:<br />
+
+            <select name="sexe" id="">
+              <option type="radio" value="1">Male </option>
+              <option type="radio" value="2">Female </option>
+              <option type="radio" value="3">Other </option> </select
+            ><br />
+            Country:<br />
+            <input type="text" name="country" placeholder="Country" /><br />
+            City:<br />
+            <input type="text" name="city" placeholder="City " /><br />
+            Contact:<br />
+            <input type="text" name="contact" placeholder="Contact" /><br />
+            Email:<br />
+            <input type="text" name="email" value="Email" /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="row">
+          <h1 id="communication">Communication</h1>
+          <h2>Notre politique de communucation</h2>
+          <p class="comm">
+            La communication numérique, parfois appelée « communication digitale
+            » (anglicisme), est un champ des sciences de l'information relatif à
+            l'utilisation de l'ensemble des médias numériques : le web, les
+            médias sociaux ou les terminaux mobiles par exemple.
+          </p>
+          <p class="comm">Au départ, il n'y a aucune différence, ou presque. Numérique est l'équivalent français du terme anglais digital (de « digit » qui signifie doigt autant que chiffres et désigne toute pratique utilisant les nombres, en particulier l'informatique), comme le précise la très sérieuse Académie Française.</p>
+          <iframe
+            class="com_you"
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+          </iframe>
+          <p></p>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="row">
+
+          <h1 id="sponsors">Sponsors</h1>
+          <h2>Our Sponsors!</h2>
+
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"><h3>Becode</h3>
+            <p>
+              hgjfg ggu gkgku khihiuhol ;jkgiygui
+                jhguitguo bhigui bigiug bigolb yfouyf uogv  
+                ljbhgjk
+              
+            </p>
+            </div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+              <img src="img/img_forest.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc"><h3>Becode</h3>
+              <p>
+                hgjfg ggu gkgku khihiuhol ;jkgiygui
+                  jhguitguo bhigui bigiug bigolb yfouyf uogv  
+                  ljbhgjk
+                
+              </p>
+              </div> </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="img_lights.jpg">
+              <img src="img/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc"><h3>Becode</h3>
+              <p>
+                hgjfg ggu gkgku khihiuhol ;jkgiygui
+                  jhguitguo bhigui bigiug bigolb yfouyf uogv  
+                  ljbhgjk
+                
+              </p>
+              </div>  </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="img/img_mountains.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc"><h3>Becode</h3>
+              <p>
+                hgjfg ggu gkgku khihiuhol ;jkgiygui
+                  jhguitguo bhigui bigiug bigolb yfouyf uogv  
+                  ljbhgjk
+                
+              </p>
+              </div> </div>
+          
+          
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <div class="w3-row-padding">
+        <div class="row">
+          <h1 id="plan">Plan D'Action</h1>
+          <h2>Plan d'Action</h2>
+          <div>
+            <dl>
+              <dt>Coffee</dt>
+              <dd>- black hot drink</dd>
+              <dd>- black hot drink</dd>
+              <dd>- black hot drink</dd>
+              <dt>Milk</dt>
+              <dd>- white cold drink</dd>
+              <dd>- white cold drink</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- end row padding -->
+
+      <footer>
+        <div class="w3-row-padding">
+          <div class="row">
+            <h1 id="contact">Contact</h1>
+            <h2>Contact</h2>
+            <div>
+              <p>
+                Contact information:
+                <a href="mailto:someone@example.com"> someone@example.com</a>
+              </p>
+              <p>Contact: 0465 851 004</p>
+              <p>facebook</p>
+              <p>facebook</p>
+              <p>facebook</p>
+            </div>
+            <div class="footer">
+              <p>&copy : Berthold Dovi</p>
+            </div>
+          </div>
+        </div>
+        <!-- end row padding -->
+      </footer>
+    </div>
+    <!-- end container -->
+  </body>
+</html>
